@@ -304,21 +304,28 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
+  
+  
+      <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
 <script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/tages/index.html",
+var gitalk = new Gitalk({
+  clientID: 'b88ff602cf2c0af995cf',
+  clientSecret: 'a944bc133d1ce62f0f769db6b3d536d733ce68dc',
+  repo: 'blogcomment',
   owner: 'xiaoyuaichitang',
-  repo: 'comment.io',
-  oauth: {
-    client_id: '62648b2e5467ba130f0a',
-    client_secret: 'f6d2c0a32f7e33b20559eb91af4b7f4cf95103b1',
-  },
+  admin: ['xiaoyuaichitang'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
 })
-gitment.render('gitment-ctn')
+
+gitalk.render('gitalk-container')
 </script>
+
+  
   
 
 
