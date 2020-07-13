@@ -19,12 +19,12 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/kuorong.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/wordpress.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
-<meta property="og:image" content="http://yoursite.com/2020-7-12-first/Sunny-Ngrok%E5%9F%9F%E5%90%8D.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/Sunny-Ngrok%E5%9F%9F%E5%90%8D.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/jiexi.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/jiluzhi.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/bangding.png">
 <meta property="article:published_time" content="2020-07-12T23:25:48.000Z">
-<meta property="article:modified_time" content="2020-07-13T13:13:52.809Z">
+<meta property="article:modified_time" content="2020-07-13T13:50:10.369Z">
 <meta property="article:author" content="志玉的小破站">
 <meta property="article:tag" content="wordpress">
 <meta property="article:tag" content="卡片电脑">
@@ -206,7 +206,7 @@
 <h1 id="二、wordpress博客系统"><a href="#二、wordpress博客系统" class="headerlink" title="二、wordpress博客系统"></a>二、wordpress博客系统</h1><hr>
 <p>下载wordpress：[wordpress网站]<a href="https://cn.wordpress.org/download/" target="_blank" rel="noopener">https://cn.wordpress.org/download/</a>  ，并将其放入到/var/www/html下面<br>给目录权限：sudo chmod -R 777 /var/www/html<br>在电脑浏览器上输入服务器IP地址，进入wordpress ，然后输入数据名wordpress、用户名：root、密码，其它默认提交，<br>然后填写站点的标题、登录wordpress的用户名、密码等，然后安装即可<br>浏览器输入：IP地址/wordpress就可进入你的博客<br>浏览器输入：IP地址/wordpress/wp-admin就可进入后台管理页面<br>还是原来的配方，还是原来的味道hello world！<br><img src="/2020/07/12/2020-7-12-first/wordpress.jpg" alt="wordpress"></p>
 <h1 id="三、内网穿透"><a href="#三、内网穿透" class="headerlink" title="三、内网穿透"></a>三、内网穿透</h1><hr>
-<p>使用内网穿透工具为Sunny-Ngrok，其网站为：<a href="https://www.ngrok.cc/" target="_blank" rel="noopener">https://www.ngrok.cc/</a><br>1、首先下载一下Ngrok客户端，由于香橙派、树莓派是基于ARM版本的，因此需要下载ARM版本。下载地址：[Ngrok-ARM]:<a href="http://hls.ctopus.com/sunny/linux_arm.zip?v=2" target="_blank" rel="noopener">http://hls.ctopus.com/sunny/linux_arm.zip?v=2</a><br>2、注册账号，然后进入隧道管理选择开通隧道，开通一个免费的隧道，此处选择开通的是美国的服务器。<br><img src="/2020/07/12/2020-7-12-first/%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="注册服务器"><br>3、下载完成之后将客户端执行文件移动到 /use/local/bin 目录下并给予可执行权限。<br>sudo mv sunny /usr/local/bin/sunny<br>sudo chmod +x /usr/local/bin/sunny<br>4、编写服务器启动隧道脚本，并启动隧道具体请参考:<a href="https://www.lxx1.com/3709" target="_blank" rel="noopener">https://www.lxx1.com/3709</a><br>5、此时可通过Sunny-Ngrok给的域名访问服务器的网站<br><img src="/2020-7-12-first/Sunny-Ngrok%E5%9F%9F%E5%90%8D.png" alt="Sunny-Ngrok域名"></p>
+<p>使用内网穿透工具为Sunny-Ngrok，其网站为：<a href="https://www.ngrok.cc/" target="_blank" rel="noopener">https://www.ngrok.cc/</a><br>1、首先下载一下Ngrok客户端，由于香橙派、树莓派是基于ARM版本的，因此需要下载ARM版本。下载地址：[Ngrok-ARM]:<a href="http://hls.ctopus.com/sunny/linux_arm.zip?v=2" target="_blank" rel="noopener">http://hls.ctopus.com/sunny/linux_arm.zip?v=2</a><br>2、注册账号，然后进入隧道管理选择开通隧道，开通一个免费的隧道，此处选择开通的是美国的服务器。<br><img src="/2020/07/12/2020-7-12-first/%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="注册服务器"><br>3、下载完成之后将客户端执行文件移动到 /use/local/bin 目录下并给予可执行权限。<br>sudo mv sunny /usr/local/bin/sunny<br>sudo chmod +x /usr/local/bin/sunny<br>4、编写服务器启动隧道脚本，并启动隧道具体请参考:<a href="https://www.lxx1.com/3709" target="_blank" rel="noopener">https://www.lxx1.com/3709</a><br>5、此时可通过Sunny-Ngrok给的域名访问服务器的网站<br><img src="/2020/07/12/2020-7-12-first/Sunny-Ngrok%E5%9F%9F%E5%90%8D.png" alt="Sunny-Ngrok"></p>
 <h1 id="四、域名绑定"><a href="#四、域名绑定" class="headerlink" title="四、域名绑定"></a>四、域名绑定</h1><hr>
 <p>如果不想使用Sunny-Ngrok给的域名，可以去腾讯云购买一个域名。注册完毕域名之后，点击解析按键</p>
 <p><img src="/2020/07/12/2020-7-12-first/jiexi.png" alt="解析"></p>
