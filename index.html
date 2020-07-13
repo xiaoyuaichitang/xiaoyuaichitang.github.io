@@ -16,7 +16,7 @@
 <meta property="og:description" content="个人站">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="志玉的小破站">
-<meta property="article:tag" content="Linux、ARM、STM32">
+<meta property="article:tag" content="嵌入式、Linux、ARM、STM32">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="志玉的小破站" type="application/atom+xml">
@@ -52,7 +52,7 @@
 		  <h1 class="header-author"><a href="/themes/yilia/source/">志玉的小破站</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">“逢山开路，遇水搭桥，披荆斩棘”</p>
+		<p class="header-subtitle">“十年饮冰，难凉热血”</p>
 		
 
 		<nav class="header-menu">
@@ -108,7 +108,7 @@
 			  <h1 class="header-author js-header-author">志玉的小破站</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“逢山开路，遇水搭桥，披荆斩棘”<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“十年饮冰，难凉热血”<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -155,6 +155,96 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-2020-7-12-first" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/12/2020-7-12-first/">mini Linux服务器搭建个人博客网站！</a>
+    </h1>
+  
+
+        
+        <a href="/2020/07/12/2020-7-12-first/" class="archive-article-date">
+  	<time datetime="2020-07-12T23:25:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>近期想在卡片电脑(香橙派zero plus2)上搭建自己的博客网站，于是乎…..说干就干！！！<br><em>谨以此文，纪念自己踩过的坑。</em><br><img src="/2020/07/12/2020-7-12-first/linux.jpg" alt="卡片电脑"></p>
+<hr>
+<p>想要在自己家里搭建个人博客网站，并且外界能够访问，需要具备以下条件：</p>
+<p><strong>1、服务器：</strong>网站运行的载体，在其上搭建WAMP或LAMP运行环境，由于卡片电脑是Linux的镜像，因此使用LAMP开发环境，即：Linux操作系统、Apache web服务器软件、MySQL数据库、php语言。</p>
+<p><strong>2、博客：</strong>常见的博客开源系统有：WordPress、emlog、Hexo等等，本次选择用wordpress博客。</p>
+<p><strong>3、内网穿透：</strong>具备1、2两者条件网站就能运行了，但是只能由于没有公网IP外网是不能直接访问,只能在局域网内访问服务器，可通过内网穿透让外界能够访问到你的网站。常见的有Sunny-Ngrok、花生壳、frp等，花生壳是比较简单的一种，但是需要收费，最后选择了Sunny-Ngrok，有免费版本并且支持绑定个人域名。</p>
+<p><strong>4、域名：</strong>外界在浏览器输入<a href="http://www.xxx.com/cn" target="_blank" rel="noopener">www.xxx.com/cn</a> ..等等访问你的网站。可以在阿里云或者腾讯云购买域名，腾讯云初次购买“.xyz”的域名首年仅需1元，非常良心，腾讯NB~。</p>
+        
+          <a class="article-more-a" href="/2020/07/12/2020-7-12-first/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordpress</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">卡片电脑</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">内网穿透</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/12/2020-7-12-first/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -168,14 +258,18 @@
 
         
         <a href="/2020/07/11/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-11T06:25:52.074Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-11</time>
+  	<time datetime="2020-07-11T10:20:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to my personal blog! Unique website: <a href="http://www.wangzhiyu.cool" target="_blank" rel="noopener">www.wangzhiyu.cool</a></p>
+        <p>Hello World 中文意思是『你好,世界』。因为《The C Programming Language》中使用它做为第一个演示程序，非常著名，所以后来的程序员在学习编程或进行设备调试时延续了</p>
+<p>这一习惯。“Hello, world”程序是指在计算机屏幕上输出“Hello,world”这行字符串的计算机程序，“hello, world”的中文意思是“你好，世界。”。这个例程在Brian Kernighan 和</p>
+<p>Dennis M.Ritchie合著的《The C Programme Language》使用而广泛流行。因为它的简洁，实用，并包含了一个该版本的C程序首次在1974年Brian Kernighan所撰写的</p>
+<p>《Programming in C: A Tutorial》出现：printf(“hello, world\n”);                                                                 ———————— 百度百科</p>
+<p><img src="/2020/07/11/hello-world/helloworld.jpg" alt="helloworld"></p>
 
       
 
@@ -184,6 +278,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hello World</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -296,10 +401,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://www.fotile.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>某商城</a>
-            </li>
-          
-            <li class="search-li">
               <a href="http://www.openedv.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>正点原子</a>
             </li>
           
@@ -315,7 +416,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">==&gt;电子爱好者&lt;==</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">==&gt; 关于我 &lt;== &lt;/br&gt;&lt;/br&gt; 『某高校小硕』&lt;/br&gt; 『某工厂小哥』&lt;/br&gt; 『写BUG小能手』&lt;/br&gt; 『嵌入式软硬件爱好者』&lt;/br&gt;</div>
   	  	
     	</section>
     
