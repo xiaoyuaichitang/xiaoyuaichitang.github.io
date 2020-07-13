@@ -16,6 +16,7 @@
 <meta property="og:description" content="近期想将卡片电脑(香橙派zero plus2)作为服务器搭建自己的博客网站，于是乎…..说干就干！！！谨以此文，纪念自己踩过的坑。  想要在自己家里搭建个人博客网站，并且外界能够访问，需要具备以下条件： 1、服务器：网站运行的载体，在其上搭建WAMP或LAMP运行环境，由于卡片电脑是Linux的镜像，因此使用LAMP开发环境，即：Linux操作系统、Apache web服务器软件、MySQL数据库">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/linux.jpg">
+<meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/xmind.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/kuorong.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/wordpress.jpg">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
@@ -24,7 +25,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/jiluzhi.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/12/2020-7-12-first/bangding.png">
 <meta property="article:published_time" content="2020-07-12T23:25:48.000Z">
-<meta property="article:modified_time" content="2020-07-13T14:00:50.373Z">
+<meta property="article:modified_time" content="2020-07-13T14:39:57.663Z">
 <meta property="article:author" content="志玉的小破站">
 <meta property="article:tag" content="wordpress">
 <meta property="article:tag" content="卡片电脑">
@@ -194,6 +195,8 @@
 <p><strong>3、内网穿透：</strong>具备1、2两者条件网站就能运行了，但是只能由于没有公网IP外网是不能直接访问,只能在局域网内访问服务器，可通过内网穿透让外界能够访问到你的网站。常见的有Sunny-Ngrok、花生壳、frp等，花生壳是比较简单的一种，但是需要收费，最后选择了Sunny-Ngrok，有免费版本并且支持绑定个人域名。</p>
 <p><strong>4、域名：</strong>外界在浏览器输入<a href="http://www.xxx.com/cn" target="_blank" rel="noopener">www.xxx.com/cn</a> ..等等访问你的网站。可以在阿里云或者腾讯云购买域名，腾讯云初次购买“.xyz”的域名首年仅需1元，非常良心，腾讯NB~。</p>
 <a id="more"></a>
+
+<p><img src="/2020/07/12/2020-7-12-first/xmind.jpg" alt="xmid"></p>
 <h1 id="一、服务器环境搭建："><a href="#一、服务器环境搭建：" class="headerlink" title="一、服务器环境搭建："></a>一、服务器环境搭建：</h1><hr>
 <p><strong>1、镜像烧写。</strong></p>
 <p>镜像烧写比较简单，烧写镜像之后输入:df -l   查看mmcblkX是内存空间是否只有几十兆，远远小于TF卡空间，如果是的话请参考拓展TF卡未使用内存教程：<a href="https://blog.nutssss.cn/611.html" target="_blank" rel="noopener">https://blog.nutssss.cn/611.html</a><br><strong>注意：</strong>mmcblkX需要根据自己实际情况填写！！！不扩容可能会出现因内存不足，安装软件失败！烧写镜像后根目录空间占用95%，扩容之后占用11%以下。<br><img src="/2020/07/12/2020-7-12-first/kuorong.jpg" alt="扩容"></p>
